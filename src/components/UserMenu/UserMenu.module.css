@@ -1,0 +1,9 @@
+.css.box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.box_button {
+    margin-right: 15px;
+}

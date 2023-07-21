@@ -7,7 +7,7 @@ import Login from 'pages/Login';
 import Contacts from 'pages/Contacts';
 import Register from 'pages/Register';
 import SharedLayout from './SharedLayout/SharedLayout';
-import Container from '@mui/material/Container';
+
 import { PrivateRoute } from 'components/PrivateRoute';
 import { RestrictedRoute } from './RestrictedRoute';
 import { refreshUser } from 'redux/auth/authOperations';
@@ -23,7 +23,7 @@ export const App = () => {
   }, [dispatch])
 
   return (
-     isRefreshing ? <h1>Loading... </h1> : (<Container maxWidth="xl">
+    isRefreshing ? <h1>Loading... </h1> : (
     <Routes>
       <Route path="/" element={<SharedLayout/>}>
           <Route index element={<Home />} />
@@ -31,9 +31,8 @@ export const App = () => {
           <Route path="/login" element={<RestrictedRoute redirectTo="/contacts"  component={<Login />}/>} /> 
           <Route path="/contacts" element={<PrivateRoute redirectTo="/login"  component={<Contacts />} />} /> 
       </Route>
-    
       </Routes>
-      </Container > )
+      )
     
   )
   };

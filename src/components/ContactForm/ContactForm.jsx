@@ -20,7 +20,7 @@ export const ContactForm = ( ) => {
         return alert(`${nameImput} is already in contacts`);
     }
 
-        dispatch(addContact({name:nameImput, phone:number }));
+        dispatch(addContact({name:nameImput, number:number }));
     form.reset();
     };
 
@@ -37,7 +37,7 @@ export const ContactForm = ( ) => {
             type="tel"
             name="number"
             placeholder="Phone number"
-            value={contacts.name}
+            value={contacts.number}
             required
         />
         <button className={css.button} type="submit">Add Contact</button>

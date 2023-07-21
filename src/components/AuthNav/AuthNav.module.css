@@ -1,0 +1,9 @@
+.auth_container {
+    font-size: 28px;
+    font-weight: 600;
+    display: flex;
+    gap: 20px;
+}
+.link {
+    text-decoration: none;
+}
