@@ -25,6 +25,7 @@ export const ContactForm = ( ) => {
     };
 
     return (
+        <div className={css.container}>
         <form className={css.form} onSubmit={handleSubmit}>
         <input className={css.text}
             type="text"
@@ -41,6 +42,7 @@ export const ContactForm = ( ) => {
             required
         />
         <button className={css.button} type="submit">Add Contact</button>
-        </form>
+            </form>
+            </div>
     )
     }

@@ -14,14 +14,24 @@ export default function Register() {
     const password = e.target.elements.password.value;
     dispatch(register({name, email, password}))
   }
+  const buttonStyles = {
+    backgroundColor: 'rgb(215 206 140)', 
+    color: 'rgb(64, 60, 60)', 
+    fontSize: '25px',
+    padding: '10px 20px',
+    border: 'none',
+    borderRadius: '4px',
+    cursor: 'pointer',
+    marginTop: '10px',
+  };
   return (
     <>
-      <div>Register</div>
+      <div></div>
       <form style={{display:'flex', flexDirection:'column', width:'320px', margin:'0 auto'}} onSubmit={handleSubmit}>
-        <TextField id="standard-basic-name" label="namr" variant="standard" type='text' name='name'/>
+        <TextField id="standard-basic-name" label="name" variant="standard" type='text' name='name'/>
         <TextField id="standard-basic-email" label="email" variant="standard" type='email' name='email'/>
         <TextField id="standard-basic-password" label="password" variant="standard" type='password' name='password'/>
-        <button type='submit'>Register</button>
+        <button  style={buttonStyles} type='submit'>Register</button>
       </form>
     </>
   )

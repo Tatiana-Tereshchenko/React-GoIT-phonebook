@@ -19,12 +19,14 @@ export default function Contacts() {
 
     
     return (
-    <div >
-    <h1 >Phonebook</h1>
+    <div  style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+      }}>
     <ContactForm />
-    <h2>Contacts</h2>
     <Filter />
-    <ContactList />
+    <ContactList  />
     </div>
 )
 }

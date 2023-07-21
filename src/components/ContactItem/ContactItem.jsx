@@ -11,13 +11,9 @@ export const ContactItem = ({ contact }) => {
     }
 
     return (
-        <li className={css.item} key={contact.id}>
-        <p className={css.text}>
-            {contact.name}: {contact.number}
-        </p>
-        <button className={css.button} onClick={handleDeleteClick}>
-            Delete
-        </button>
-        </li>
+    <li className={css.item} key={contact.id}>
+        <button className={css.button} onClick={handleDeleteClick}>Delete</button>
+        <p className={css.text}>{contact.name}: {contact.number}</p>
+    </li>
     );
     }

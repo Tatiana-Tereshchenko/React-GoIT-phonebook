@@ -14,15 +14,24 @@ export default function Login() {
     );
     formLogin.reset();
   }
-
+  const buttonStyles = {
+    backgroundColor: 'rgb(215 206 140)', 
+    color: 'rgb(64, 60, 60', 
+    fontSize: '25px',
+    padding: '10px 20px',
+    border: 'none',
+    borderRadius: '4px',
+    cursor: 'pointer',
+    marginTop: '10px',
+  };
 
   return (
     <>
-      <div>login</div>
-      <form onSubmit={handleSubmit} style={{display:'flex', flexDirection:'column', width:320, margin:'0 auto'}}>
+      <div></div>
+      <form  onSubmit={handleSubmit} style={{display:'flex', flexDirection:'column', width:320, margin:'30px auto'}}>
         <TextField id="standard-basic-email" label="email" variant="standard"  type='email' name="email" />
         <TextField id="standard-basic-password" label="password" variant="standard" type='password'name="password" />
-        <button type='submit'>login</button>
+        <button style={buttonStyles} type='submit'>login</button>
       </form>
     </>
   )

@@ -16,7 +16,7 @@ const UserMenu = () => {
 
     return (
         <div className={css.box}>
-            <div className={css.box_button}>{user.name}</div>
+            <div className={css.button_box}>{user.name}</div>
             <Button onClick={onLogout} variant="outlined" endIcon={<ExitToAppIcon />} size="medium">
                 Logout
             </Button>

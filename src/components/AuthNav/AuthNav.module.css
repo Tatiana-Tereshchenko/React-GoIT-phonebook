@@ -1,9 +1,10 @@
 .auth_container {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 600;
     display: flex;
     gap: 20px;
 }
 .link {
     text-decoration: none;
+    color: rgb(64, 60, 60);
 }

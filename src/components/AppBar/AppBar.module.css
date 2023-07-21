@@ -1,0 +1,7 @@
+.header_box {
+    background: rgb(215 206 140);
+    border: solid 2px rgb(43, 42, 42);
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 15px 25px 15px;
+}

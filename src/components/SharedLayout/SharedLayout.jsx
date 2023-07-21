@@ -8,7 +8,7 @@ export default function SharedLayout() {
   return (
     <div >
       <AppBar />
-      <Suspense fallback={null}>
+      <Suspense  fallback={null}>
         <Outlet />
       </Suspense>
     </div>
