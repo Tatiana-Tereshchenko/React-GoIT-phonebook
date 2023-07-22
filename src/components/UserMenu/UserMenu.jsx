@@ -16,10 +16,18 @@ const UserMenu = () => {
 
     return (
         <div className={css.box}>
-            <div className={css.button_box}>{user.name}</div>
-            <Button onClick={onLogout} variant="outlined" endIcon={<ExitToAppIcon />} size="medium">
-                Logout
-            </Button>
+            {user ? (
+                <>
+                    <div className={css.button_box}>{user.name}</div>
+                    <Button onClick={onLogout} variant="outlined" endIcon={<ExitToAppIcon />} size="medium">
+                        Logout
+                    </Button>
+                </>
+            ) : (
+                <Button onClick={onLogout} variant="outlined" endIcon={<ExitToAppIcon />} size="medium">
+                    Logout
+                </Button>
+            )}
         </div>
     )
 }
